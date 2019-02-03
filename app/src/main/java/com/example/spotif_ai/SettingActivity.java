@@ -30,12 +30,16 @@ public class SettingActivity extends AppCompatActivity {
             @Override
            public void onClick(View v) {
                 dispatchTakePictureIntent(0);
+                overridePendingTransition(R.anim.slide_up, R.anim.fade_out);
+                finish();
             }
         });
         motivateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dispatchTakePictureIntent(1);
+                overridePendingTransition(R.anim.slide_up, R.anim.fade_out);
+                finish();
             }
         });
 
